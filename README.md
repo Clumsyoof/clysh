@@ -36,12 +36,16 @@ A custom unix shell implementation based on Stephen Brennan's LSH shell
 This project is built for Unix machines running bash.
 
 You will need the following build tools:
-*`gcc`
-*`CMake`
+* `gcc`
+* `CMake`
 
 ### Installation
 
 1. Clone the repository and navigate into it.
+```
+       git clone https://github.com/Clumsyoof/clumsyshell.git
+       cd clumsyshell
+```
 2. Run the installer:
    ```
    ./install.sh
@@ -79,8 +83,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
-
+Distributed under the Unlicense. See `LICENSE` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
