@@ -13,7 +13,7 @@ char* shell_read(void)
     char *buffer = malloc(sizeof(char)*buffersize);
     int c;
     if(!buffer) {
-        fprintf(stderr,"csh: allocation error\n");
+        fprintf(stderr,"clysh: allocation error\n");
         exit(EXIT_FAILURE);
     }
     while(1) {
@@ -29,7 +29,7 @@ char* shell_read(void)
             buffersize += SH_R_BUFFSIZE;
             buffer = realloc(buffer,buffersize*sizeof(char));
             if(!buffer) {
-                fprintf(stderr,"csh: allocation error\n");
+                fprintf(stderr,"clysh: allocation error\n");
                 exit(EXIT_FAILURE);
             }
         }
@@ -45,7 +45,7 @@ char** shell_split(char *line)
     char **buffer = malloc(sizeof(char*)*buffersize);
     char *token;
     if(!buffer) {
-        fprintf(stderr,"csh: allocation error\n");
+        fprintf(stderr,"clysh: allocation error\n");
         exit(EXIT_FAILURE);
     }
     token = strtok(line,SH_DELIM);
@@ -56,7 +56,7 @@ char** shell_split(char *line)
             buffersize += SH_R_BUFFSIZE;
             buffer = realloc(buffer,buffersize*sizeof(char*));
             if(!buffer) {
-                fprintf(stderr,"csh: allocation error\n");
+                fprintf(stderr,"clysh: allocation error\n");
                 exit(EXIT_FAILURE);
             }
         }
@@ -72,11 +72,11 @@ int shell_launch(char **args)
     pid = fork();
     if (pid == 0) {
         if (execvp(args[0], args) == -1) {
-        perror("csh");
+        perror("clysh");
         }
         exit(EXIT_FAILURE);
     } else if (pid < 0) {
-        perror("csh");
+        perror("clysh");
     } else {
         do {
             wpid = waitpid(pid, &status, WUNTRACED);

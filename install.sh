@@ -14,4 +14,4 @@ cmake --build build
 echo "[4/4] Installing to system (this will prompt for sudo)..."
 sudo cmake --install build
 echo "=== Installation Complete ==="
-echo "Type sh to run."
+echo "Type clysh to run."

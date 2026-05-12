@@ -49,10 +49,10 @@ You will need the following build tools:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Once installed,launch the shell using csh.
+Once installed,launch the shell using clysh.
 
 ````
-csh
+clysh
 ````
 
 Type help for further usage.
