@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.31.11)
+project(clumsyshell)
+add_subdirectory(src/shell/c)
+add_subdirectory(src/cmd/c)
+add_subdirectory(src/main/c)

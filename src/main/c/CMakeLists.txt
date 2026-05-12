@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.31.11)
+project(csh)
+add_executable(csh main.c)
+target_link_libraries(csh PRIVATE cmd shell)
+install(TARGETS csh DESTINATION bin)
