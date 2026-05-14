@@ -1,0 +1,10 @@
+# Build directories
+build/
+cmake-build-*/
+*.o
+*.exe
+
+# Common ignores
+.DS_Store
+.vscode/
+.idea/

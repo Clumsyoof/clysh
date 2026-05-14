@@ -1,5 +1,0 @@
-/usr/local/lib/libshell.a
-/usr/local/include/shell.h
-/usr/local/lib/libcmd.a
-/usr/local/include/cmd.h
-/usr/local/bin/clysh
