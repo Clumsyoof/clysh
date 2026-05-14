@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -Wl,--dependency-file=CMakeFiles/clysh.dir/link.d CMakeFiles/clysh.dir/main.c.o -o clysh  ../../cmd/c/libcmd.a ../../shell/c/libshell.a
